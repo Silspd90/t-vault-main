@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  align-items: center;
+  padding: 1.7rem 1.7rem 1.7rem 3.8rem;
+  min-width: 28rem;
+  cursor: pointer;
+}
+
+.card--selected {
+  background: linear-gradient(to right, #72134b, #1d212c);
+}
+
+.card--right {
+  background: #1c1f29;
+}
+
+.card:hover {
+  background: linear-gradient(to right, #72134b, #1d212c);
+}
+
+.card__logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.card__logo-active {
+  width: 4rem;
+  height: 4rem;
+  display: none;
+}
+
+.card--right:hover .card__logo {
+  display: none;
+}
+
+.card--right:hover .card__logo-active {
+  display: block;
+}
+
+.card__info {
+  margin-left: 1.5rem;
+}
+
+.card__info-name {
+  white-space: pre;
+}
+
+.card__info-time {
+  font-size: 1.3rem;
+  margin-top: 0.6rem;
+  color: #5e627c;
+}
+
+.card__actions {
+  display: none;
+  margin-left: auto;
+}
+
+.card--right:hover .card__actions {
+  display: block;
+}
+
+.card__actions--show {
+  display: block;
+}
+
+.card__icon-container {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.card__icon-container:hover {
+  background: rgba(90, 99, 122, 0.2);
+  cursor: pointer;
+}
+
+.card__icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}

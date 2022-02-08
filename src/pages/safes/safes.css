@@ -1,0 +1,11 @@
+.safes {
+  display: grid;
+  grid-template: auto / 40% 60%;
+  height: 100%;
+}
+
+@media screen and (max-width: 945px) {
+  .safes {
+    grid-template-columns: auto;
+  }
+}
